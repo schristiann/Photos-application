@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="544.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AdminController">
+   <children>
+      <ListView fx:id="listView" layoutX="14.0" layoutY="51.0" prefHeight="316.0" prefWidth="313.0" />
+      <Button layoutX="404.0" layoutY="353.0" mnemonicParsing="false" onAction="#handleLogout" text="Logout" />
+      <Button layoutX="475.0" layoutY="353.0" mnemonicParsing="false" onAction="#handleQuit" text="Quit" />
+      <Text layoutX="157.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Admin Page for Photos">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Button id="CreateNewUser" layoutX="375.0" layoutY="105.0" mnemonicParsing="false" onAction="#handleCreateNewUser" text="Create new user" />
+      <Button id="DeleteExistingUser" layoutX="363.0" layoutY="196.0" mnemonicParsing="false" onAction="#handleDeleteExistingUser" text="Delete existing user " />
+      <Text layoutX="342.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username:" />
+      <Text layoutX="342.0" layoutY="255.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username:" />
+      <TextField fx:id="create_name" layoutX="416.0" layoutY="148.0" prefHeight="27.0" prefWidth="118.0" promptText="username" />
+      <TextField fx:id="delete_name" layoutX="416.0" layoutY="237.0" prefHeight="27.0" prefWidth="118.0" promptText="username" />
+   </children>
+</AnchorPane>
